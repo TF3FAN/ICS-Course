@@ -1,3 +1,4 @@
+puts 'Leap Year Calculator Intiated'
 while true
     puts 'Please submit a starting year'
     startyear = gets.chomp
@@ -15,5 +16,13 @@ while true
             puts x
         end
         x = x + 1
+    end
+    puts 'Would you like to submit another range?'
+    response = gets.chomp
+    if response == 'yes'
+      #do nothing
+    else
+      puts 'Okay. Goodbye!'
+       break
     end
 end
